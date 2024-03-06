@@ -1,4 +1,4 @@
-package com.admin.contentservice.entity;
+package com.admin.titleservice.entity;
 
 import lombok.Data;
 
@@ -9,7 +9,7 @@ import java.time.LocalDateTime;
 import java.util.List;
 
 @Data
-public class User{
+public class User {
     private Long ID;
     @Email
     @NotEmpty(message = "Email field can't be empty!")

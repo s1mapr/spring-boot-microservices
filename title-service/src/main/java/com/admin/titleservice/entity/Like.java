@@ -1,4 +1,4 @@
-package com.admin.contentservice.entity;
+package com.admin.titleservice.entity;
 
 import lombok.Data;
 

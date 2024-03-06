@@ -8,5 +8,4 @@ import java.util.List;
 public class Serial {
     private Long ID;
     private String serialName;
-    private List<Title> titles;
 }
