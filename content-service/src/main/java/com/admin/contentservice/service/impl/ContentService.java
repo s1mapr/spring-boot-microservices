@@ -1,7 +1,7 @@
 package com.admin.contentservice.service.impl;
 
 import com.admin.contentservice.dao.ContentDAO;
-import com.admin.contentservice.entity.AllContent;
+import com.admin.contentservice.dto.AllContent;
 import com.admin.contentservice.entity.Category;
 import com.admin.contentservice.entity.Serial;
 import com.admin.contentservice.entity.Tag;
