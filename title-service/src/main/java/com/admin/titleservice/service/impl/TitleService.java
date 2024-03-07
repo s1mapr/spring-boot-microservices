@@ -65,8 +65,4 @@ public class TitleService implements ITitleService {
         return titleDAO.findTitlesByUserId(userId);
     }
 
-    @Override
-    public boolean deleteTitle(Long id) {
-        return false;
-    }
 }

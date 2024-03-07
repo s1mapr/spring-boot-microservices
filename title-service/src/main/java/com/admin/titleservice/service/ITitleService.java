@@ -25,6 +25,4 @@ public interface ITitleService {
 
     Title deleteCommentForTitle(Title title, Long commentId);
 
-    boolean deleteTitle(Long id);
-
 }
