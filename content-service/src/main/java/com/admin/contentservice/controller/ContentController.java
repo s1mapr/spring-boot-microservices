@@ -13,7 +13,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping(value = "/contents", produces = MediaType.APPLICATION_JSON_VALUE)
+@RequestMapping(value = "/api/contents", produces = MediaType.APPLICATION_JSON_VALUE)
 @RequiredArgsConstructor
 public class ContentController {
 

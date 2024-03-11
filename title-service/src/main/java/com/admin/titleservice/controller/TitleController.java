@@ -17,7 +17,7 @@ import org.springframework.web.servlet.ModelAndView;
 import java.util.List;
 
 @RestController
-@RequestMapping("/titles")
+@RequestMapping("/api/titles")
 @RequiredArgsConstructor
 public class TitleController {
 

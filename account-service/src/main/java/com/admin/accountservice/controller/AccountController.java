@@ -21,7 +21,7 @@ import java.util.Arrays;
 import java.util.List;
 
 @Controller
-@RequestMapping("/users")
+@RequestMapping("/api/users")
 @RequiredArgsConstructor
 public class AccountController {
 
@@ -66,7 +66,7 @@ public class AccountController {
     public ResponseEntity<UserDTO> getUser(@PathVariable Long id) {
         User user = userService.getUserById(id);
         List<Title> titles = Arrays.stream(webClientBuilder.build().get()
-                .uri("http://title-service/titles/user-titles/" + id)
+                .uri("http://title-service/api/titles/user-titles/" + id)
                 .retrieve().bodyToMono(Title[].class).block()).toList();
         UserDTO userDTO = new UserDTO();
         userDTO.setUser(user);
