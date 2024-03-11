@@ -79,12 +79,19 @@ public class TitleController {
     }
 
     @GetMapping("/sort/id")
-    public ResponseEntity<List<Title>> sortByID(ModelMap model) {
+    public ResponseEntity<List<Title>> sortByID() {
         return new ResponseEntity<>(service.getAllTitlesSort(Sort.ID), HttpStatus.OK);
     }
 
     @GetMapping("/sort/date")
-    public ResponseEntity<List<Title>> sortByDate(ModelMap model) {
+    public ResponseEntity<List<Title>> sortByDate() {
         return new ResponseEntity<>(service.getAllTitlesSort(Sort.DATE), HttpStatus.OK);
     }
+
+    @GetMapping("/user-titles/{id}")
+    public ResponseEntity<List<Title>> getAllUserTitles(@PathVariable Long id){
+        List<Title> titles = service.getAllUserTitles(id);
+        return new ResponseEntity<>(titles, HttpStatus.OK);
+    }
+
 }
