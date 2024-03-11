@@ -26,7 +26,7 @@ import java.util.List;
 public class AccountController {
 
     private final IAccountService userService;
-    private final WebClient webClient;
+    private final WebClient.Builder webClientBuilder;
 //  private ITitleService service;
 
     @GetMapping("/")
@@ -65,8 +65,8 @@ public class AccountController {
     @GetMapping("/{id}")
     public ResponseEntity<UserDTO> getUser(@PathVariable Long id) {
         User user = userService.getUserById(id);
-        List<Title> titles = Arrays.stream(webClient.get()
-                .uri("http://localhost:8082/titles/user-titles/" + id)
+        List<Title> titles = Arrays.stream(webClientBuilder.build().get()
+                .uri("http://title-service/titles/user-titles/" + id)
                 .retrieve().bodyToMono(Title[].class).block()).toList();
         UserDTO userDTO = new UserDTO();
         userDTO.setUser(user);
