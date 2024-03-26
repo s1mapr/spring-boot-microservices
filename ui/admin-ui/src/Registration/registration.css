@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f7fc; /* Голубой фон */
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.register-form {
+    background-color: #ffffff;
+    padding: 30px; /* Уменьшаем внутренние отступы */
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    width: 400px; /* Увеличиваем ширину формы */
+    max-width: 100%; /* Максимальная ширина формы для адаптивности */
+}
+
+.reg-form-group {
+    margin-bottom: 20px;
+}
+
+.reg-form-group label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #336699; /* Темно-синий */
+}
+
+.reg-form-control {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.reg-form-group-name,
+.reg-form-group-surname {
+    display: inline-block;
+    width: calc(50% - 5px);
+    margin-right: 10px;
+}
+
+.reg-form-group-name input,
+.reg-form-group-surname input {
+    margin-top: 8px;
+}
+
+.reg-form-group.reg-form-check {
+    display: flex;
+    align-items: center;
+}
+
+.check-input {
+    margin-right: 8px;
+}
+
+.reg-actions {
+    text-align: center;
+}
+
+.reg-submit {
+    width: 100%; /* Делаем кнопку по ширине такой же, как и инпуты */
+    background-color: #007bff; /* Синий */
+    color: #ffffff;
+    padding: 14px 0; /* Убираем горизонтальные отступы */
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.reg-submit:hover {
+    background-color: #0056b3; /* Темно-синий при наведении */
+}
+
+.href-auth {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #007bff; /* Синий */
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+.href-auth:hover {
+    color: #0056b3; /* Темно-синий при наведении */
+}

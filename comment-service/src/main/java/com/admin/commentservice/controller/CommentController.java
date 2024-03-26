@@ -62,7 +62,7 @@ public class CommentController {
     }
 
     @GetMapping("")
-    public ResponseEntity<List<Comment>> redirect(ModelMap model) {
+    public ResponseEntity<List<Comment>> redirect() {
         return comments();
     }
 }

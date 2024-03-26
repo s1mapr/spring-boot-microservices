@@ -1,0 +1,59 @@
+.login-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f7fc; /* Голубой фон */
+}
+
+.reg-form-div {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    width: 350px;
+}
+
+.reg-form-div label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #336699; /* Темно-синий */
+}
+
+.reg-form-div input {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0 20px;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.reg-form-div .login-submit {
+    background-color: #007bff; /* Синий */
+    color: #ffffff;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.reg-form-div .login-submit:hover {
+    background-color: #0056b3; /* Темно-синий при наведении */
+}
+
+.href-register {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #007bff; /* Синий */
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+.href-register:hover {
+    color: #0056b3; /* Темно-синий при наведении */
+}

@@ -17,8 +17,8 @@ public class UserDAO {
 
 
     public void saveUser(User user) {
-        String sql = "INSERT INTO users (name, password, role) VALUES (?,?,?)";
-        jdbcTemplate.update(sql, user.getName(), user.getPassword(), user.getRole());
+        String sql = "INSERT INTO users (name, password, role, email, first_name, last_name, creation_date) VALUES (?,?,?,?,?,?,?)";
+        jdbcTemplate.update(sql, user.getName(), user.getPassword(), user.getRole(), user.getEmail(), user.getFirstName(), user.getLastName(), user.getCreationDate());
     }
 
     public Optional<User> getUserByEmailAndPassword(String name) {

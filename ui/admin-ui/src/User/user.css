@@ -1,0 +1,158 @@
+.user-main {
+    padding: 20px;
+}
+
+.user-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.user-info-container {
+    margin-bottom: 20px;
+    width: 70%;
+    max-width: 800px;
+}
+
+.user-info {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 800px;
+}
+
+.user-form-group {
+    margin-bottom: 20px;
+    width: 100%;
+    height: fit-content;
+    
+}
+
+.user-form-control {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.user-username-input {
+    display: flex;
+    align-items: center;
+}
+
+.user-username-input span {
+    margin-right: 5px;
+}
+
+.user-role-control {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.user-role-control button {
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.user-title-info {
+    margin-top: 20px;
+}
+
+.user-title-content {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.user-title-content strong {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.user-comments-container {
+    width: 70%;
+    max-width: 800px;
+
+}
+
+.user-comments-heading {
+    margin-bottom: 20px;
+}
+
+.user-comments-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.user-comment-item {
+    padding: 0 10px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid rgb(156, 156, 156);
+    border-radius: 5px;
+}
+
+.user-comment-item a{
+    text-decoration: none;
+
+}
+
+.user-comment-content {
+    padding: 10px;
+
+}
+
+.user-comment-action {
+    margin-top: 5px;
+}
+
+.user-comment-delete button {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.user-role-control-div{
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.btn-ban-user,
+.btn-unban-user,
+.btn-change-role {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    height: 50px;
+    background-color: #a4a4a4;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-ban-user:hover {
+    background-color: #f01616;
+    color: #ffffff; 
+}
+
+.btn-unban-user:hover,
+.btn-change-role:hover {
+    background-color: #2563eb; 
+}

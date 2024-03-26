@@ -1,0 +1,38 @@
+.navigation {
+    background-color: #007bff; /* Синий цвет фона */
+    padding: 10px 0; /* Внутренние отступы сверху и снизу */
+}
+
+.navigation-container {
+    max-width: 1200px; /* Максимальная ширина контейнера */
+    margin: 0 auto; /* Центрирование контейнера */
+}
+
+.navigation-collapse {
+    display: flex;
+    justify-content: space-between; /* Равномерное распределение элементов по ширине */
+    align-items: center; /* Выравнивание элементов по вертикали */
+}
+
+.navigation-ul {
+    list-style-type: none; /* Убираем маркеры списка */
+    margin: 0; /* Убираем внешние отступы */
+    padding: 0; /* Убираем внутренние отступы */
+}
+
+.navigation-item {
+    display: inline-block; /* Элементы в строку */
+}
+
+.navigation-link {
+    color: #ffffff; /* Белый цвет текста */
+    text-decoration: none; /* Убираем подчеркивание */
+    padding: 10px 20px; /* Внутренние отступы */
+    transition: background-color 0.3s ease; /* Плавное изменение цвета при наведении */
+}
+
+.navigation-link:hover {
+    background-color: #0056b3; /* Темно-синий цвет фона при наведении */
+    border-radius: 5px; /* Скругление углов при наведении */
+    transition: background-color 0.3s ease; /* Плавное изменение цвета при наведении */
+}

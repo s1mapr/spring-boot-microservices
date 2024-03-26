@@ -3,6 +3,8 @@ package com.admin.authenticationservice.controller;
 import com.admin.authenticationservice.entity.User;
 import com.admin.authenticationservice.service.AuthService;
 import lombok.RequiredArgsConstructor;
+import org.springframework.http.HttpHeaders;
+import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
@@ -24,10 +26,16 @@ public class AuthController {
     }
 
     @PostMapping("/token")
-    public String getToken(@RequestBody User user) {
+    public ResponseEntity<?> getToken(@RequestBody User user) {
         Authentication authentication = authenticationManager.authenticate(new UsernamePasswordAuthenticationToken(user.getName(), user.getPassword()));
         if (authentication.isAuthenticated()) {
-            return authService.generateToken(user.getName());
+            String token =  authService.generateToken(user.getName());
+            user.setPassword("-");
+            return ResponseEntity.ok()
+                    .header(
+                            HttpHeaders.AUTHORIZATION,
+                            token
+                    ).body(user);
         } else {
             throw new RuntimeException("user invalid access");
         }

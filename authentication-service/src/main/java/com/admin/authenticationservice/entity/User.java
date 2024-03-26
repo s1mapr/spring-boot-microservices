@@ -16,8 +16,11 @@ import java.util.List;
 public class User {
     private Long ID;
     private String name;
+    private String email;
+    private String firstName;
+    private String lastName;
     private String password;
-    private String role = "USER";
+    private String role = "ADMIN";
     private LocalDateTime creationDate = LocalDateTime.now();
     private boolean banned;
 }

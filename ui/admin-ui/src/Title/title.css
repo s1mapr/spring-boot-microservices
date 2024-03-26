@@ -1,0 +1,186 @@
+/* title.css */
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Main */
+main {
+    padding: 20px;
+}
+
+/* Title Container */
+.title-container {
+    max-width: 800px;
+    margin: auto;
+}
+
+/* Title Div */
+.title-div {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Title Div Info */
+.title-div-info {
+    margin-bottom: 20px;
+}
+
+/* Title Info H4 */
+.title-info-h4 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+/* Title Info Div */
+.title-info-div {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Title Div Info Content */
+.title-div-info-content {
+    margin-bottom: 10px;
+}
+
+/* Title Form Label */
+.title-form-label {
+    font-weight: bold;
+}
+
+/* Title Form Control */
+.title-form-control {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    text-align: center;
+}
+.title-dropdown-none,
+.title-dropdown-btn {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.title-dropdown-none:hover,
+.title-dropdown-btn:hover {
+    background-color: #f01616; /* Зеленый цвет для первой кнопки */
+    color: #ffffff; /* Белый цвет текста */
+}
+
+.title-dropdown-btn {
+    margin-top: 10px; /* Отступ сверху для второй кнопки */
+}
+
+.title-dropdown-btn:hover {
+    background-color: #2563eb; /* Синий цвет для второй кнопки */
+}
+
+
+.btn-ban,
+.btn-unban {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    height: 75px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-ban:hover,
+.btn-unban:hover {
+    background-color: #f01616; /* Зеленый цвет для первой кнопки */
+    color: #ffffff; /* Белый цвет текста */
+}
+
+.btn-ban:hover {
+    background-color: #2563eb; /* Синий цвет для второй кнопки */
+}
+.title-comment-delete{
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: white; /* Синий цвет для второй кнопки */
+    color: black;
+}
+
+.title-comment-delete:hover{
+    background-color: #f01616; /* Зеленый цвет для первой кнопки */
+    color: #ffffff; /* Белый цвет текста */
+}
+
+/* Title Btn Group */
+.title-btn-group {
+    margin-bottom: 20px;
+}
+
+/* Title Dropdown Menu */
+.title-dropdown-menu {
+    margin-top: 5px;
+    padding-left: 0;
+    list-style: none;
+}
+
+
+/* Title List Group Item */
+.title-list-group-item {
+    padding: 10px;
+    margin-bottom: 5px;
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+}
+
+/* Title Text Secondary */
+.title-text-secondary {
+    color: #6c757d;
+}
+
+/* Title Text Muted */
+.title-text-muted {
+    color: #adb5bd;
+}
+
+/* Title Comments H3 */
+.title-comments-h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+/* Title Comments Div */
+.title-comments-div {
+    list-style: none;
+    padding-left: 0;
+}
+
+/* Title Stat */
+.title-stat {
+    margin-bottom: 10px;
+}
+
+/* Text Danger */
+.text-danger {
+    color: #dc3545;
+}
+
+/* Hover Effect */
+.title-list-group-item:hover {
+    background-color: #e9ecef;
+}
