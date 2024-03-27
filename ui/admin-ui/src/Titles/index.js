@@ -126,13 +126,13 @@ const Titles = () => {
                   <tr>
                     <th scope="col">ID</th>
                     <th scope="col">Назва</th>
+                    <th scope="col">Опис</th>
+                    <th scope="col" width="150">Дата</th>
                     <th scope="col">Статус</th>
                     <th scope="col">Тип</th>
                     <th scope="col">Теги</th>
                     <th scope="col">Категорії</th>
                     <th scope="col">Серії</th>
-                    <th scope="col">Опис</th>
-                    <th scope="col" width="150">Дата</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -144,6 +144,12 @@ const Titles = () => {
                         </td>
                         <td>
                           <span>{title.titleName}</span>
+                        </td>
+                        <td>
+                          <span>{title.description}</span>
+                        </td>
+                        <td>
+                          <span>{new Date(title.creationDate).toLocaleString()}</span>
                         </td>
                         <td>
                           {title.released ? 'Випущена' : 'Заблокована'}
@@ -166,12 +172,8 @@ const Titles = () => {
                             <small key={index} className="titles-d-block">{ser.serialName}</small>
                           ))}
                         </td>
-                        <td>
-                          <span>{title.description}</span>
-                        </td>
-                        <td>
-                          <span>{new Date(title.creationDate).toLocaleString()}</span>
-                        </td>
+
+
                       </tr>
                     ))
                   ) : (

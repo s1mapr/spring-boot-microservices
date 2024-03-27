@@ -99,10 +99,11 @@
 
 .comments-table th,
 .comments-table td {
-    padding: 8px;
-    text-align: left;
-    vertical-align: middle;
-    border-bottom: 1px solid #dee2e6;
+  padding: 8px;
+  text-align: left;
+  vertical-align: middle;
+  border-bottom: 1px solid #dee2e6;
+  border-right: 1px solid #dee2e6;
 }
 
 .comments-bg-success {

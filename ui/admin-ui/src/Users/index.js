@@ -125,12 +125,12 @@ const Users = () => {
                                 <thead>
                                     <tr>
                                         <th scope="col">Id</th>
-                                        <th scope="col">@Нікнейм</th>
-                                        <th scope="col">Статус</th>
-                                        <th scope="col">Роль</th>
-                                        <th scope="col">Email</th>
-                                        <th scope="col">Прізвище</th>
+                                        <th scope="col">Нікнейм</th>
                                         <th scope="col">Ім'я</th>
+                                        <th scope="col">Прізвище</th>
+                                        <th scope="col">Email</th>
+                                        <th scope="col">Роль</th>
+                                        <th scope="col">Статус</th>
                                         <th scope="col">Дата реєстрації</th>
                                     </tr>
                                 </thead>
@@ -146,20 +146,21 @@ const Users = () => {
                                                     <span>{user.name}</span>
                                                 </td>
                                                 <td>
-                                                    {user.banned ? 'Заблокований' : 'Вільне користування'}
-                                                </td>
-                                                <td                                                >
-                                                    {user.role === "AUTHOR" ? "Автор" :
-                                                        user.role === "PRE_AUTHOR" ? "Запит на авторство" :
-                                                            user.role === "USER" ? "Користувач" : ""}                                                </td>
-                                                <td>
-                                                    <span>{user.email}</span>
+                                                    <span>{user.firstName}</span>
                                                 </td>
                                                 <td>
                                                     <span>{user.lastName}</span>
                                                 </td>
                                                 <td>
-                                                    <span>{user.firstName}</span>
+                                                    <span>{user.email}</span>
+                                                </td>
+                                                <td>
+                                                    {user.role === "AUTHOR" ? "Автор" :
+                                                        user.role === "PRE_AUTHOR" ? "Запит на авторство" :
+                                                            user.role === "USER" ? "Користувач" : ""}
+                                                </td>
+                                                <td>
+                                                    {user.banned ? 'Заблокований' : 'Вільне користування'}
                                                 </td>
                                                 <td>
                                                     <span>{user.creationDate}</span>
